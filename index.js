@@ -20,7 +20,7 @@ var data = multer({
     })
 }).single("use")
 
-app.use(express.static(path.join(__dirname, "./datafiles")))
+app.use(express.static("datafiles"))
 // require("path")
 app.set('port', process.env.PORT || 3000)
 
@@ -36,7 +36,8 @@ app.set('port', process.env.PORT || 3000)
 // })
 app.post('/mult',data ,(req, res, next)=>{
    console.log(req.file)
-    res.redirect("http://127.0.0.1:5500/datafiles/index.html")
+   res.send(req.file.originalname)
+    // res.redirect("https://centertest.onrender.com/index.html")
 
     res.end()
 })
