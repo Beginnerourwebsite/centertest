@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="./sg.js"></script>
+
+    <form id="forms" action="http://localhost:3000/mult" method="post" enctype="multipart/form-data">
+        <input type="file" name="use">
+        <input type="text" name="data">
+        <button type="submit">submit</button>
+    </form>
+    <p  width="40%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio velit sit eveniet illo numquam molestias enim iusto blanditiis quibusdam recusandae reiciendis sequi fuga aliquam, est magnam non eum voluptates eius?</p>
+    <p width="40%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio velit sit eveniet illo numquam molestias enim iusto blanditiis quibusdam recusandae reiciendis sequi fuga aliquam, est magnam non eum voluptates eius?</p>
+    <script>
+        // document.getElementById("forms").addEventListener("submit",(event)=>{
+        //     event.preventDefault()
+        // })
+    </script>
 </body>
+
 </html>
